@@ -14,7 +14,7 @@
             background-color: rgb(0, 117, 189);
         }
         body{
-            padding-top: 60px;
+            padding-top: 80px;
             display: flex;
             flex-direction: column;
         }
@@ -23,9 +23,6 @@
             height: 400px;
             object-fit: cover;
             border: solid 5px black !important;
-        }
-        .content-wrapper{
-            flex: 1;
         }
         .container-content{
             display: flex;
@@ -45,12 +42,6 @@
         }
 
         @media only screen and (max-width:530px){
-            #portfolio{
-                width: 475px;
-            }
-            .content-wrapper{
-                flex-basis: auto;
-            }
             .image-style{
             width: 220px;
             height: 400px;
@@ -61,19 +52,19 @@
             }
         }
         @media only screen and (max-width:414px){
-            #portfolio{
-                width: 414px;
-            }
-            .content-wrapper{
-                flex-basis: auto;
-            }
             .image-style{
-            width: 210px;
+            width: 200px;
             height: 265px;
             }
             .hover-action:hover{
             width: 212px;
             height: 275px;
+            }
+            #portfolio, .container-content{
+                padding-top: 0px;
+            }
+            .row{
+                padding-top: 0px;
             }
         } 
     </style>
