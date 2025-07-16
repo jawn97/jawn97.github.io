@@ -26,6 +26,7 @@
             display: flex;
             justify-content: center;
             padding-top: 25px;
+            animation: fade-in 0.5s ease-in forwards;
         }
         .nav-link:hover{
             color: white;
@@ -33,6 +34,18 @@
         .footer{
             text-align: center;
             color: white;
+            animation: fade-in 0.5s ease-in forwards;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                display: none;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
         @media only screen and (min-width:992px){
